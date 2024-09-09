@@ -8,14 +8,17 @@ public class EjemploLocalTime {
     public static void main(String[] args) {
         System.out.println("EJEMPLO LOCAL TIME");
 
+        //cremos la hora 
         LocalTime aAhora = LocalTime.now();
+        
         System.out.println(aAhora);
         System.out.println("Hora: " + aAhora.getHour());
         System.out.println("Minutos: " + aAhora.getMinute());
         System.out.println("Seg: " + aAhora.getSecond());
-
+        
         System.out.println("");
 
+        //otra forma de crear una fecha
         LocalTime onceDiecisiete = LocalTime.of(11, 17);
         System.out.println("Hora: " + onceDiecisiete);
 
@@ -25,7 +28,7 @@ public class EjemploLocalTime {
 
         //sumando a la hora
         LocalTime seisDoce = LocalTime.of(6, 30).plus(1, ChronoUnit.HOURS);
-        System.out.println(seisDoce);
+        System.out.println("Nueva Hora: "+seisDoce);
 
         //para ver si una hora es anteior a la otra
         boolean esAnterior = LocalTime.of(6, 12).isBefore(LocalTime.parse("07:30"));
