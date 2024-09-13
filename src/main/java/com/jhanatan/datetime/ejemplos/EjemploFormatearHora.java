@@ -35,6 +35,7 @@ public class EjemploFormatearHora {
         boolean esAnterior = LocalTime.of(6, 12, 50).isBefore(LocalTime.parse("07:30"));
         System.out.println("Es anterior: " + esAnterior);
 
+        //le damos formato a la hora
         DateTimeFormatter df = DateTimeFormatter.ofPattern("hh:mm:ss a");
         String hora = df.format(onceDiecisiete);
         String hora2 = onceDiecisiete.format(df);
