@@ -43,6 +43,13 @@ public class EjemploFormatearHora {
         System.out.println("Hora formateada: " + hora2);
         System.out.println("Hora formateada: " + hora);
 
+        System.out.println("");
+        //hora maxima y minima
+        LocalTime max = LocalTime.MAX;
+        LocalTime min = LocalTime.MIN;
+        System.out.println("MAX: " + max);
+        System.out.println("MIN: " + min);
+
     }
 
 }
